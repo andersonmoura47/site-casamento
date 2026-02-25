@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Entre em contato com o desenvolvedor do site">
+    <meta name="keywords" content="contato, html, css, python, flask">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>Pagina Web</title>
+</head>
+
+<body>
+    <p id="topo"></p>
+    <header>
+        <nav>
+            <ul>
+                <h4><a href="index.html">Início</a></h4>
+                <h4><a href="about.html">Sobre</a></h4>
+                <h4><a href="contato.html">Contato</a></h4>
+                <h4><a href="flexbox.html">Flexbox</a></h4>
+                <h4><a href="bootstrap.html">Bootstrap</a></h4>
+            </ul>
+        </nav>
+
+        <h1>Contato</h1>
+        <h3>Fale conosco</h3>
+    </header>
+
+    <!-- Formulário de Contato -->
+    <form name="formulario" id="formulario" method="post" autocomplete="off" enctype="multipart/form-data">
+        <!--Method "get" envia os dados usando url e "post" envia de forma escondida-->
+        <!--Enctype multipart/form-data é obrigatorio quando input type "file" para anexar arquivos-->
+        <fieldset> <!--Coloca o formulario dentro de um quadro-->
+            <legend>Formulário de Contato</legend>
+            <label for="nome">Nome:</label> <!--Para navegador não gráfico e acessibilidade-->
+            <input type="text" id="nome" name="nome" required><br> <!--Required torna obrigatório-->
+            <label for="nascimento">Data de Nascimento:</label> <!--For se refere à ID do input-->
+            <input type="date" name="nascimento" id="nascimento"><br>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone"><br>
+            <label for="mail">E-mail:</label>
+            <input type="email" name="mail" id="mail"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações Adicionais</legend>
+            <!--Checkbox cria caixa de seleção, não mutuamente exclusivas, seleção multipla-->
+            Permissão de contato: <!--Value é a informação enviada ao servidor quando submete-->
+            <input type="checkbox" name="email" value="email" checked>E-mail <!--Checked marca por padrão-->
+            <input type="checkbox" name="telefone" value="telefone">Telefone<br>
+
+            <!--Radio cria botões mutuamente exclusivos, marca um desmarca devido ao mesmo name-->
+            Sexo:
+            <input type="radio" name="sexo" value="masculino">Masculino
+            <input type="radio" name="sexo" value="feminino">Feminino<br>
+
+            <!--Select abre um lista suspensa-->
+            <label for="preferencia">Linguagem Preferencial:</label>
+            <select name="preferencia" id="preferencia">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="python" selected>Python</option> <!--Selected deixa como padrão-->
+                <option value="javascript">JavaScript</option>
+            </select><br>
+
+            <!--Textarea cria uma caixa de texto para mensagens-->
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..."></textarea><br>
+            Anexos:
+            <input type="file" name="anexo"><br> <!--Input file anexar arquivos-->
+            <input type="submit" value="Enviar"> <!--Submit envia o formulário-->
+            <input type="reset" value="Limpar"> <!--Reset limpa o formulário-->
+            <br>
+        </fieldset>
+    </form><br>
+
+    <br>
+    <p>Outras formas de contato:</p>
+    <p>Email: anderson_m47@exemplo.com</p>
+    <p>Instagram: <a href="https://instagram.com/anderson_m47" target="_blank"
+            title="Clique para ser direcionado">@anderson_m47</a></p>
+    <p>Telefone: (37) 9 9874-1564</p>
+    <p>Endereço: Praça Getúlio Vargas, 18, Centro,
+        Santo Antônio do Monte/MG - CEP 35560-000</p>
+
+    <br>
+    <a href="#topo" class="topo">Voltar ao topo ↑</a>
+    <hr>
+
+    <footer>
+        <p>Desenvolvido por Anderson F. de Moura</p>
+        <p>Contato: anderson_m47</p>
+        <p>Todos os direitos reservados &copy;</p>
+    </footer>
+    <script src="dark.js"></script>
+
+</body>
+
+</html>

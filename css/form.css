@@ -1,0 +1,8 @@
+form {
+    padding-left: 85px;
+}
+
+input, select, textarea, legend {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

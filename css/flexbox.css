@@ -1,0 +1,30 @@
+.container {
+    display: flex; /*flex (toda a largura) ou inline-flex (apenas o conteudo)*/
+
+    /*flex-direction: row; /*Direção do eixo: row | rowreverse| column| column-reverse*/
+    /*flex-wrap: wrap; /*Transbordamento: nowrap | wrap | wrap-reverse*/
+
+    flex-flow: row wrap; /*Junção de atalho: flex-diretion e flex-wrap*/
+    
+    width: 400px; /*Comprimento do conteiner*/
+    
+    background: rgb(255, 223, 185); /*Para tornar visivel e tornar fácil a edição*/
+    border-radius: 12px; /*Borda arredondada*/
+
+    /*Propriedades de alinhamento*/
+    /*justify-content: flex-start; /*Justify-content: alinhar os itens do eixo principal (row\column)*/
+    /*align-content: stretch; /*Align-content: Alinhar todos os elementos dentro do conteiner*/
+    place-content: flex-start center; /*Junção de atalho: justify-content e align-content*/
+    align-items: stretch; /*Alinhamento dentro dos itens*/
+
+    gap: 10px; /*Espaçamento entre os itens*/
+    padding: 10px; /*Espaço ao redor*/
+}
+
+.item { /*Classe item*/
+    background: aqua; /*Cor para tornar visível*/
+    width: 50%; /*Ajusta para que os itens se encaixem em X% do conteiner*/
+    border-radius: 12px; /*Borda arredondada*/
+    padding: 10px; /*Espaço ao redor*/
+    text-align: center; /*Alinhamento texto*/
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Programação em html, css e python">
+    <meta name="keywords" content="html, css, python, flask">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Viewport width=devide-width, initial-scale=1: serve para o navegador controlar
+    as dimensões e escala da página, garantindo renderização e reponsividade-->
+    <!--Viweport Virtual: Inicialmente criando pela apple no safari IOS, hoje é padrão
+    em navagedor móvel não há barra de rolagem (ocuparia um espaço valioso),
+    nem janelas (seriam pequenas de mais) | Atual: Design responsivo em GRID-->
+    <!--Responsividade: A página se adapta ao tamanho da tela | Hoje baseado em GRID-->
+    <!--Para ser responsivo, todos os elementos bootstrap devem estar em conteiner <div>
+    e, os conteiners não podem ser aninhados e corretamente fechados-->
+
+    <!-- Fonte de links abaixo (Site Bootstrap/docs) -->
+    <!-- https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+    <!-- Proncipal Link CDN para o css bootstrap: -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <title>Pagina Web</title>
+</head>
+
+<body>
+    <p id="topo"></p>
+    <header>
+        <nav>
+            <ul>
+                <h4><a href="index.html">Início</a></h4>
+                <h4><a href="about.html">Sobre</a></h4>
+                <h4><a href="contato.html">Contato</a></h4>
+                <h4><a href="flexbox.html">Flexbox</a></h4>
+                <h4><a href="bootstrap.html">Bootstrap</a></h4>
+            </ul>
+        </nav>
+
+        <h1>Framework Boostrap</h1>
+        <h3>Como é o boostrap</h3><br>
+
+        <!-- Principal Link CDN para o JavaScript bootstrap: -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+        <!-- Para ver sobre botões: https://getbootstrap.com/docs/5.3/components/buttons/ -->
+        <!-- Botões é só um exemplo, lá no site tem vários e vários outros componentes -->
+        <!-- No pdf do curso mostra sobre tabelas, cards, formularios, carrossel -->
+        <div class="row" style="padding-left: 100px; padding-right: 100px; padding-top: 30px; padding-bottom: 30px;">
+            <!-- Ele entende que é row é linha | e estilizei aqui mesmo -->
+
+            <div class="coluna1">Botões padrão</div>
+
+            <!-- A classe btn do Bootstrap pode ser adicionada a HTML: <button>, <input> e <a> -->
+            <button type="button" class="btn">Botão</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+
+            <div class="coluna2" style="padding-top: 30px">Botões de contorno</div>
+
+            <button type="button" class="btn">Botão</button>
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div>
+
+    </header>
+
+    <br>
+    <a href="#topo" class="topo">Voltar ao topo ↑</a><br>
+    <hr>
+
+    <footer>
+        <p>Desenvolvido por Anderson F. de Moura</p>
+        <p>Contato: anderson_m47</p>
+        <p>Todos os direitos reservados &copy;</p>
+    </footer>
+
+    <script src="dark.js"></script>
+
+</body>
+
+</html>

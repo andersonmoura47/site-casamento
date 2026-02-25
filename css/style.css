@@ -1,0 +1,116 @@
+:root {
+    --primary: #39073b;
+    --secondary: #a53860;
+    --text: #333333;
+    --text_navfot: #ffffff;
+    --bg: #f8f5f5;
+    --footer-bg: #1c1c1c;
+    --card: #000000;
+    --sombra: rgba(0, 0, 0, 0.15); /*O parametro alfa vai de 0-1 (transparente-opaco)*/
+}
+
+/*Critérios navegador: Declaração in-line > Declaração interna > Declaração externa*/
+/*Pading é o espaço entre o conteúdo e a borda (interno)*/
+/*Margin é o espaço entre a borda e seus arredores (externo)*/
+/*Para unidade de comprimento caso o valor seja 0 pode omitir a unidade*/
+/*São unidades: px, em, ex, ch, rem, vw, vh, %, etc (ver quadro no conteudo)*/
+
+/*Seletores*/
+/*Existem vários seletores: de etiqueta, classe, ID, universal, irmão, descendente*/
+/*Etiqueta: p {color:aqua} mudamos todas as etiquetas de paragrafo*/
+/*Classe: .minhaclasse {} (começa com ponto)*/
+/*ID: #meuID {} (começa com #)*/
+/*Universal: * {} (asterisco)*/
+/*Irmão: h1 + p {} altera os paragrafos <p> após um h4 tag*/
+/*Descendente: h4 a {} estiliza especidficamente o link a que deriva de h4*/
+/*Para aplicar um estilo a uma unica etiqueta podemos usar a etiqueta span no html*/
+
+body { /*Isso é um Seletor de etiqueta, ou seja, ele determina qual elemento HTML será estilizado*/ 
+    background: var(--bg);
+    font-family: 'Poppins', sans-serif; /*Fonte do body geral*/
+    color: var(--text); /*Cor do texto*/
+}
+
+header ul { /*Header / Menu de Navegação*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*Fonte do menu*/
+    text-transform: uppercase; /*Deixa todas as letras maiúsculas */
+    display: flex; /*Deixa um ao lado do outro*/
+    gap: 40px; /*Espaçamento entre os itens */
+    padding-left: 100px; /*Espaçamento do lado esquerdo*/
+    justify-content: left; /*Alinhamento do texto a esquerda*/
+
+    /* estilo de card */
+    background: var(--card); /*Cor de fundo, cria efeito de card*/
+    border-radius: 16px; /*Borda arredondada*/ 
+    box-shadow: 0 4px 12px var(--sombra); /*Sombra: horizontal | vertical | desfoque | cor*/
+}
+
+h4 a { /*Estiliza os nomes das guias de menu*/
+    color: var(--text_navfot); /*Cor do texto*/
+}
+
+h1 { /*Título principal*/
+    text-align: center; /*Centraliza o texto*/
+    color: var(--primary); /*Cor do texto*/
+}
+
+h3 { /*Subtítulo*/
+    text-align: center; /*Centraliza o texto*/
+    color: var(--secondary); /*Cor do texto*/
+}
+
+p { /*Parágrafos*/
+    padding-left: 100px; /*Espaçamento do lado esquerdo*/
+    padding-right: 100px; /*Espaçamento do lado direito*/
+    text-align: justify; /*Justifica o texto*/
+    margin-top: 5px; /*Espaçamento a cima de cada parágrafo*/
+    margin-bottom: 10px; /*Espaçamento a baixo de cada parágrafo*/
+}
+
+a { /*Links*/
+    text-decoration: solid; /*Estilo do link*/
+    color: var(--primary); /*Cor do texto*/
+}
+
+/*Exitem estados para um link como hover, visited, active...*/
+a:hover { /*hover(pairar): ao passar o mouse, funciona todos os links, pois (a.)*/
+    color: var(--secondary); /*Cor ao passar o mouse*/
+    text-decoration: underline; /*Estilo ao passar o moure*/
+}
+
+a:active { /*Quando ativado*/
+    color: rgba(255, 0, 0, 0.925); 
+}
+
+iframe { /*Video*/
+    margin: 10px 10px 10px 100px; /*Distanciamento: topo | direita | inferior | esquerda*/
+    border: none; /* Remove a borda padrão do iframe */
+    border-radius: 16px; /*Borda arredondada*/
+    box-shadow: 0 4px 12px var(--sombra); /*Sombra*/
+}
+
+@font-face { /*Importa uma fonte externa personalizada*/
+    font-family: 'Debrosee'; /*Nome da fonte que está na pasta*/
+    src: url('Debrosee.ttf'); /*Endereço do arquivo*/
+}
+
+a.topo { /*Refere-se ao link <a> nomeado com id topo, a edição é exclusiva para a id*/
+    padding-left: 100px; /*Espaçamento lado esquerdo*/
+    text-transform: uppercase; /*Maiúsculo*/
+    font-family: Debrosee, sans-serif; /*Usando a fonte instalada*/
+}
+
+footer { /*Rodapé*/
+    padding: 15px; /*Tamanho*/
+    background: var(--footer-bg); /*Cor de fundo*/
+    border-radius: 16px; /*Borda arredondada*/
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.3); /*Sombra, configurações diferentes das anteriores*/
+    margin-top: 30px; /*Espaçamento a cima*/
+}
+
+footer p { /*Parágrafo do rodapé*/
+    text-align: center; /*Centraliza o texto*/
+    color: var(--text_navfot); /*Mesma cor que o menu de guias nav*/
+    margin: 5px 0; /*Espaçamento entre linhas*/
+    font-size: 0.8rem; /*Tamanho do texto*/
+}
